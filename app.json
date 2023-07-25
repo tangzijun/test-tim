@@ -14,14 +14,17 @@
     "assetBundlePatterns": [
       "**/*"
     ],
+    "plugins": ["./plugins/withAndroidNamespace"],
     "ios": {
-      "supportsTablet": true
+      "supportsTablet": true,
+      "bundleIdentifier": "com.zijun.myapp"
     },
     "android": {
       "adaptiveIcon": {
         "foregroundImage": "./assets/adaptive-icon.png",
         "backgroundColor": "#ffffff"
-      }
+      },
+      "package": "com.zijun.myapp"
     },
     "web": {
       "favicon": "./assets/favicon.png"
